@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yesim Sehil | Services & Réseaux</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-blue: #58a6ff;
+            --accent-hover: #1f6feb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 50px;
+            background: linear-gradient(180deg, rgba(31,111,235,0.1) 0%, rgba(13,17,23,1) 100%);
+        }
+
+        /* Style pour la photo de profil */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-blue);
+            box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .contact-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: var(--text-main);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .badge:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            text-align: justify;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
+
+        .skill-card i {
+            font-size: 2.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-list li::before {
+            content: '▹';
+            color: var(--accent-blue);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #30363d;
+            margin-top: 50px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.2rem; }
+            .profile-img { width: 130px; height: 130px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Insertion de la photo -->
+        <img src="photo-yesim.png" alt="Photo de Yesim Sehil" class="profile-img">
+        
+        <h1>Yesim Sehil</h1>
+        <h2>Étudiant en Informatique | Services & Réseaux</h2>
+        
+        <div class="contact-badges">
+            <a href="mailto:sehilyesim@gmail.com" class="badge">
+                <i class="fas fa-envelope"></i> sehilyesim@gmail.com
+            </a>
+            <a href="tel:0749470681" class="badge">
+                <i class="fas fa-phone"></i> 07 49 47 06 81
+            </a>
+            <!-- Lien LinkedIn mis à jour -->
+            <a href="https://www.linkedin.com/in/yesim-sehil-98a6863a0/" target="_blank" class="badge">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </header>
+
+    <section id="a-propos">
+        <h3 class="section-title"><i class="fas fa-user-astronaut"></i> À Propos de moi</h3>
+        <p class="about-text">
+            Actuellement étudiant à l'Université Polytechnique Hauts-de-France, basé à Maubeuge. Je suis passionné par l'infrastructure informatique, la conception d'architectures réseaux et l'administration système. Mon objectif est de déployer et de maintenir des environnements numériques sécurisés, performants et hautement disponibles pour répondre aux exigences des entreprises d'aujourd'hui.
+        </p>
+    </section>
+
+    <section id="competences">
+        <h3 class="section-title"><i class="fas fa-server"></i> Compétences Techniques</h3>
+        
+        <div class="skills-grid">
+            <!-- Réseaux -->
+            <div class="skill-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Réseaux & Infrastructure</h3>
+                <ul class="skill-list">
+                    <li>Routage et Commutation (Cisco IOS)</li>
+                    <li>VLAN, STP, OSPF</li>
+                    <li>Adressage IP, DHCP, DNS</li>
+                    <li>Wi-Fi d'entreprise</li>
+                </ul>
+            </div>
+
+            <!-- Systèmes -->
+            <div class="skill-card">
+                <i class="fas fa-terminal"></i>
+                <h3>Administration Système</h3>
+                <ul class="skill-list">
+                    <li>Environnements Linux (Debian/Ubuntu)</li>
+                    <li>Windows Server (Active Directory)</li>
+                    <li>Virtualisation (VMware, Proxmox)</li>
+                    <li>Scripting Bash / PowerShell</li>
+                </ul>
+            </div>
+
+            <!-- Cybersécurité -->
+            <div class="skill-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Sécurité & Cloud</h3>
+                <ul class="skill-list">
+                    <li>Pare-feu (pfSense, Fortinet)</li>
+                    <li>VPN (IPsec, OpenVPN)</li>
+                    <li>Supervision (Zabbix)</li>
+                    <li>Bases du Cloud (Microsoft Azure)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Yesim Sehil. Développé avec passion pour l'infrastructure IT.</p>
+    </footer>
+
+</body>
+</html>

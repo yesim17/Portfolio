@@ -64,7 +64,7 @@
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .badge {
@@ -97,6 +97,7 @@
             align-items: center;
             gap: 10px;
             transition: 0.3s;
+            margin-top: 10px;
         }
 
         .btn-cv:hover {
@@ -121,7 +122,6 @@
             gap: 15px;
         }
 
-        /* Timeline Style */
         .timeline {
             position: relative;
             padding-left: 30px;
@@ -165,7 +165,6 @@
             margin: 5px 0;
         }
 
-        /* Projects Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -186,7 +185,7 @@
         }
 
         .card i {
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: var(--accent-blue);
             margin-bottom: 15px;
         }
@@ -200,11 +199,6 @@
             margin-right: 5px;
             display: inline-block;
             margin-top: 10px;
-        }
-
-        .hobby-card {
-            text-align: center;
-            padding: 20px;
         }
 
         footer {
@@ -245,14 +239,21 @@
         </a>
     </header>
 
+    <section id="a-propos">
+        <h3 class="section-title"><i class="fas fa-user-astronaut"></i> À Propos</h3>
+        <p style="font-size: 1.1rem; color: var(--text-muted);">
+            Actuellement étudiant à l'Université Polytechnique Hauts-de-France, basé à Maubeuge. Passionné par l'infrastructure IT, je me spécialise dans la conception d'architectures réseaux sécurisées et l'administration système. Curieux de nature, j'aime relever des défis techniques et apprendre continuellement pour répondre aux exigences numériques d'aujourd'hui.
+        </p>
+    </section>
+
     <section id="parcours">
         <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Mon Parcours</h3>
         <div class="timeline">
             <div class="timeline-item">
-                <span class="timeline-date">2024 - 2025 (En cours)</span>
+                <span class="timeline-date">2024 - 2025</span>
                 <div class="timeline-content">
                     <h3>Master Cloud Architecture & Sécurité</h3>
-                    <p>Université Polytechnique Hauts-de-France (Maubeuge)</p>
+                    <p>UPHF - Maubeuge</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -277,56 +278,53 @@
         <div class="grid">
             <div class="card">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Architecture VPN Multi-sites</h3>
-                <p>Mise en place d'une interconnexion sécurisée via tunnel IPsec site-à-site.</p>
-                <span class="tag">IPsec</span> <span class="tag">VLANs</span> <span class="tag">Routage</span>
+                <h3>Architecture VPN</h3>
+                <p>Mise en place d'une interconnexion sécurisée site-à-site via tunnels IPsec.</p>
+                <span class="tag">IPsec</span> <span class="tag">VLANs</span> <span class="tag">Security</span>
             </div>
             <div class="card">
                 <i class="fas fa-eye"></i>
-                <h3>Supervision Réseau</h3>
-                <p>Déploiement et configuration d'un serveur Zabbix pour le monitoring des infrastructures.</p>
-                <span class="tag">Zabbix</span> <span class="tag">SNMP</span> <span class="tag">Linux</span>
+                <h3>Supervision Zabbix</h3>
+                <p>Déploiement d'une solution de monitoring avec alertes SNMP pour serveurs et réseaux.</p>
+                <span class="tag">Zabbix</span> <span class="tag">Monitoring</span> <span class="tag">Linux</span>
             </div>
             <div class="card">
                 <i class="fas fa-server"></i>
-                <h3>Services d'Infrastructure</h3>
-                <p>Configuration de serveurs Windows (Active Directory, DNS, DHCP) et virtualisation.</p>
-                <span class="tag">AD</span> <span class="tag">VMware</span> <span class="tag">WS Server</span>
+                <h3>Infrastructure AD</h3>
+                <p>Gestion Active Directory, DNS et DHCP sous Windows Server avec virtualisation VMware.</p>
+                <span class="tag">Windows Server</span> <span class="tag">VMware</span>
             </div>
         </div>
     </section>
 
     <section id="competences">
-        <h3 class="section-title"><i class="fas fa-code-branch"></i> Compétences Clés</h3>
+        <h3 class="section-title"><i class="fas fa-microchip"></i> Compétences</h3>
         <div class="grid">
             <div class="card">
                 <i class="fas fa-network-wired"></i>
-                <h3>Networking</h3>
-                <p>Cisco IOS, OSPF, VLAN, STP, Wi-Fi d'entreprise.</p>
+                <h3>Réseaux</h3>
+                <p>Configuration Cisco IOS, protocoles OSPF, STP, gestion des VLANs et Wi-Fi.</p>
             </div>
             <div class="card">
                 <i class="fas fa-terminal"></i>
                 <h3>Systèmes</h3>
-                <p>Administration Linux & Windows, Proxmox, Scripting.</p>
+                <p>Administration Linux (Debian) et Windows, Proxmox et scripting Bash/PowerShell.</p>
             </div>
         </div>
     </section>
 
     <section id="loisirs">
-        <h3 class="section-title"><i class="fas fa-heart"></i> Loisirs & Curiosité</h3>
-        <p style="margin-bottom: 30px;">
-            De nature très curieuse, je cherche constamment à <strong>apprendre le plus de choses possible</strong>. Voici ce qui me passionne en dehors de l'informatique :
-        </p>
+        <h3 class="section-title"><i class="fas fa-star"></i> Loisirs</h3>
         <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
-            <div class="card hobby-card">
+            <div class="card" style="text-align: center;">
                 <i class="fas fa-dumbbell"></i>
                 <h3>Musculation</h3>
             </div>
-            <div class="card hobby-card">
+            <div class="card" style="text-align: center;">
                 <i class="fas fa-running"></i>
                 <h3>Course</h3>
             </div>
-            <div class="card hobby-card">
+            <div class="card" style="text-align: center;">
                 <i class="fas fa-book-open"></i>
                 <h3>Lecture</h3>
             </div>

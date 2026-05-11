@@ -151,6 +151,32 @@
             color: var(--accent-blue);
         }
 
+        /* Hobbies Card Style */
+        .hobby-card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
+
+        .hobby-card i {
+            font-size: 2rem;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+
+        .hobby-card h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -170,7 +196,6 @@
 <body>
 
     <header>
-        <!-- Insertion de la photo -->
         <img src="photo-yesim.png" alt="Photo de Yesim Sehil" class="profile-img">
         
         <h1>Yesim Sehil</h1>
@@ -183,7 +208,6 @@
             <a href="tel:0749470681" class="badge">
                 <i class="fas fa-phone"></i> 07 49 47 06 81
             </a>
-            <!-- Lien LinkedIn mis à jour -->
             <a href="https://www.linkedin.com/in/yesim-sehil-98a6863a0/" target="_blank" class="badge">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
@@ -201,7 +225,6 @@
         <h3 class="section-title"><i class="fas fa-server"></i> Compétences Techniques</h3>
         
         <div class="skills-grid">
-            <!-- Réseaux -->
             <div class="skill-card">
                 <i class="fas fa-network-wired"></i>
                 <h3>Réseaux & Infrastructure</h3>
@@ -213,7 +236,6 @@
                 </ul>
             </div>
 
-            <!-- Systèmes -->
             <div class="skill-card">
                 <i class="fas fa-terminal"></i>
                 <h3>Administration Système</h3>
@@ -225,7 +247,6 @@
                 </ul>
             </div>
 
-            <!-- Cybersécurité -->
             <div class="skill-card">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Sécurité & Cloud</h3>
@@ -235,6 +256,28 @@
                     <li>Supervision (Zabbix)</li>
                     <li>Bases du Cloud (Microsoft Azure)</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="loisirs">
+        <h3 class="section-title"><i class="fas fa-compass"></i> Loisirs & Curiosité</h3>
+        <p class="about-text" style="margin-bottom: 25px;">
+            De nature très curieuse, je profite de mon temps libre pour <strong>apprendre le plus de choses possible</strong> et découvrir de nouveaux sujets, qu'ils soient technologiques ou non. Pour garder un bon équilibre et me ressourcer au quotidien, je pratique également plusieurs activités :
+        </p>
+        
+        <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="hobby-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Musculation</h3>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-running"></i>
+                <h3>Course à pied</h3>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Lecture</h3>
             </div>
         </div>
     </section>

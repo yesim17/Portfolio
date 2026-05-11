@@ -59,7 +59,6 @@
             margin-bottom: 30px;
         }
 
-        /* Style du lecteur audio */
         .audio-player {
             margin: 20px auto;
             width: 100%;
@@ -70,7 +69,7 @@
             width: 100%;
             height: 40px;
             border-radius: 30px;
-            filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Adapte les couleurs au thème sombre */
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5);
         }
 
         .contact-badges {
@@ -245,21 +244,6 @@
             margin-top: 10px;
         }
 
-        .btn-project {
-            margin-top: 20px;
-            color: var(--accent-blue);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .btn-project:hover {
-            text-decoration: underline;
-        }
-
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -284,7 +268,6 @@
         <div class="audio-player">
             <audio controls>
                 <source src="audio.m4a" type="audio/mp4">
-                Votre navigateur ne supporte pas l'élément audio.
             </audio>
         </div>
         
@@ -396,46 +379,43 @@
             </div>
             <div class="card">
                 <i class="fas fa-tasks"></i>
-                <h3>Gestion & Projets IT</h3>
+                <h3>Soft Skills & Langues</h3>
                 <ul class="skills-list">
-                    <li><i class="fas fa-check"></i> Introduction à la gestion des organisations (GSI)</li>
-                    <li><i class="fas fa-check"></i> Recueil de besoins et environnement économique</li>
-                    <li><i class="fas fa-check"></i> Anglais technique (B1/B2)</li>
-                    <li><i class="fas fa-check"></i> Communication technique et travail d'équipe</li>
+                    <li><i class="fas fa-language"></i> <strong>Anglais :</strong> Niveau technique (B1/B2)</li>
+                    <li><i class="fas fa-check"></i> Analyse et troubleshooting d'incidents</li>
+                    <li><i class="fas fa-check"></i> Rédaction de documentations techniques</li>
+                    <li><i class="fas fa-check"></i> Travail en équipe et veille technologique</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section id="projets">
-        <h3 class="section-title"><i class="fas fa-project-diagram"></i> Projets Techniques</h3>
+        <h3 class="section-title"><i class="fas fa-project-diagram"></i> Projets Techniques (SAÉ)</h3>
         <div class="grid">
             <div class="card">
-                <i class="fas fa-lock"></i>
-                <h3>Architecture VPN</h3>
-                <p>Mise en place d'une interconnexion sécurisée site-à-site via tunnels IPsec.</p>
+                <i class="fas fa-server"></i>
+                <h3>Déploiement de Services Réseau</h3>
+                <p><strong>SAÉ 2.03 :</strong> Installation, configuration et test de services réseaux essentiels (DHCP, DNS, Web) dans un environnement virtualisé Linux.</p>
                 <div style="flex-grow: 1;">
-                    <span class="tag">IPsec</span> <span class="tag">VLANs</span> <span class="tag">Security</span>
+                    <span class="tag">Linux</span> <span class="tag">Services Réseau</span> <span class="tag">Virtualisation</span>
                 </div>
-                <a href="#" class="btn-project">Voir le projet <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="card">
-                <i class="fas fa-eye"></i>
-                <h3>Supervision Zabbix</h3>
-                <p>Déploiement d'une solution de monitoring avec alertes SNMP pour serveurs et réseaux.</p>
+                <i class="fas fa-laptop-code"></i>
+                <h3>Développement d'Application IHM</h3>
+                <p><strong>SAÉ 2.01 :</strong> Conception et développement complet d'une application intégrant une Interface Homme-Machine (IHM) et respectant les principes POO.</p>
                 <div style="flex-grow: 1;">
-                    <span class="tag">Zabbix</span> <span class="tag">Monitoring</span> <span class="tag">Linux</span>
+                    <span class="tag">POO</span> <span class="tag">IHM</span> <span class="tag">Java/Python</span>
                 </div>
-                <a href="#" class="btn-project">Voir le projet <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="card">
-                <i class="fas fa-sitemap"></i>
-                <h3>Infrastructure AD</h3>
-                <p>Gestion Active Directory, DNS et DHCP sous Windows Server avec virtualisation VMware.</p>
+                <i class="fas fa-database"></i>
+                <h3>Création & Exploitation BD</h3>
+                <p><strong>SAÉ 1.04 & 2.04 :</strong> Modélisation d'une base de données et développement de requêtes SQL complexes pour l'analyse des données.</p>
                 <div style="flex-grow: 1;">
-                    <span class="tag">Windows Server</span> <span class="tag">VMware</span>
+                    <span class="tag">SQL</span> <span class="tag">Modélisation</span> <span class="tag">SGBD</span>
                 </div>
-                <a href="#" class="btn-project">Voir le projet <i class="fas fa-external-link-alt"></i></a>
             </div>
         </div>
     </section>

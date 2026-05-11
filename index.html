@@ -171,12 +171,21 @@
             gap: 25px;
         }
 
+        /* Grille spécifique 2x2 pour les compétences sur desktop */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
             padding: 25px;
             border-radius: 12px;
             transition: 0.3s;
+            display: flex;
+            flex-direction: column;
         }
 
         .card:hover {
@@ -190,11 +199,11 @@
             margin-bottom: 15px;
         }
         
-        /* Liste pour les compétences détaillées */
         .skills-list {
             list-style: none;
             padding: 0;
             margin-top: 15px;
+            flex-grow: 1;
         }
 
         .skills-list li {
@@ -223,6 +232,21 @@
             margin-top: 10px;
         }
 
+        .btn-project {
+            margin-top: 20px;
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-project:hover {
+            text-decoration: underline;
+        }
+
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -233,7 +257,7 @@
 
         @media (max-width: 768px) {
             h1 { font-size: 2.2rem; }
-            .grid { grid-template-columns: 1fr; }
+            .grid, .skills-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -295,9 +319,25 @@
         </div>
     </section>
 
+    <section id="certifications">
+        <h3 class="section-title"><i class="fas fa-certificate"></i> Certifications</h3>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="card">
+                <i class="fas fa-award"></i>
+                <h3>Objectif CCNA</h3>
+                <p>Préparation à la certification Cisco Certified Network Associate.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Fundamentals</h3>
+                <p>Initiation aux services et architectures Cloud (Azure/AWS).</p>
+            </div>
+        </div>
+    </section>
+
     <section id="competences">
         <h3 class="section-title"><i class="fas fa-microchip"></i> Compétences & Savoir-faire</h3>
-        <div class="grid">
+        <div class="skills-grid">
             <div class="card">
                 <i class="fas fa-network-wired"></i>
                 <h3>Réseaux & Télécoms</h3>
@@ -330,12 +370,12 @@
             </div>
             <div class="card">
                 <i class="fas fa-tasks"></i>
-                <h3>Savoir-faire / Soft Skills</h3>
+                <h3>Soft Skills & Langues</h3>
                 <ul class="skills-list">
-                    <li><i class="fas fa-check"></i> Analyse et résolution d'incidents (Troubleshooting)</li>
+                    <li><i class="fas fa-language"></i> <strong>Anglais :</strong> Niveau technique (B1/B2)</li>
+                    <li><i class="fas fa-check"></i> Analyse et troubleshooting d'incidents</li>
                     <li><i class="fas fa-check"></i> Rédaction de documentations techniques</li>
-                    <li><i class="fas fa-check"></i> Veille technologique constante</li>
-                    <li><i class="fas fa-check"></i> Travail en équipe et gestion de projets IT</li>
+                    <li><i class="fas fa-check"></i> Travail en équipe et veille technologique</li>
                 </ul>
             </div>
         </div>
@@ -348,19 +388,28 @@
                 <i class="fas fa-lock"></i>
                 <h3>Architecture VPN</h3>
                 <p>Mise en place d'une interconnexion sécurisée site-à-site via tunnels IPsec.</p>
-                <span class="tag">IPsec</span> <span class="tag">VLANs</span> <span class="tag">Security</span>
+                <div style="flex-grow: 1;">
+                    <span class="tag">IPsec</span> <span class="tag">VLANs</span> <span class="tag">Security</span>
+                </div>
+                <a href="#" class="btn-project">Voir le projet <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="card">
                 <i class="fas fa-eye"></i>
                 <h3>Supervision Zabbix</h3>
                 <p>Déploiement d'une solution de monitoring avec alertes SNMP pour serveurs et réseaux.</p>
-                <span class="tag">Zabbix</span> <span class="tag">Monitoring</span> <span class="tag">Linux</span>
+                <div style="flex-grow: 1;">
+                    <span class="tag">Zabbix</span> <span class="tag">Monitoring</span> <span class="tag">Linux</span>
+                </div>
+                <a href="#" class="btn-project">Voir le projet <i class="fas fa-external-link-alt"></i></a>
             </div>
             <div class="card">
                 <i class="fas fa-sitemap"></i>
                 <h3>Infrastructure AD</h3>
                 <p>Gestion Active Directory, DNS et DHCP sous Windows Server avec virtualisation VMware.</p>
-                <span class="tag">Windows Server</span> <span class="tag">VMware</span>
+                <div style="flex-grow: 1;">
+                    <span class="tag">Windows Server</span> <span class="tag">VMware</span>
+                </div>
+                <a href="#" class="btn-project">Voir le projet <i class="fas fa-external-link-alt"></i></a>
             </div>
         </div>
     </section>
